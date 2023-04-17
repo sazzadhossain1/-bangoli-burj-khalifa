@@ -1,4 +1,4 @@
-import React, { useContext } from "react";
+import React, { useContext, useState } from "react";
 import { Link } from "react-router-dom";
 import { FaGoogle } from "react-icons/fa";
 import "./signUp.css";
@@ -6,6 +6,8 @@ import { AuthContext } from "../../Context/UserContext";
 
 const SignUp = () => {
   const { createUser } = useContext(AuthContext);
+  const [error, setError] = useState("");
+  const [success, setSuccess] = useState(false);
 
   const handleSignUp = (e) => {
     e.preventDefault();
@@ -16,12 +18,26 @@ const SignUp = () => {
     const confirm = form.confirm.value;
     console.log(email, password, confirm);
 
+    if (password.length < 8) {
+      setError("Please Password length at least 8 characters");
+      return;
+    }
+
+    if (password !== confirm) {
+      setError("Password do not match");
+      return;
+    }
+
     createUser(email, password)
       .then((result) => {
         const user = result.user;
         console.log(user);
+        setError("");
+        setSuccess(true);
+        form.reset();
       })
-      .catch((error) => console.log(error));
+      .catch((error) => setError(error.message));
+    form.reset();
   };
   return (
     <div>
@@ -74,7 +90,10 @@ const SignUp = () => {
                   Please login
                 </Link>
               </h1>
-
+              <p style={{ color: "red" }}>{error}</p>
+              {success && (
+                <p style={{ color: "green" }}>User Created Successfully</p>
+              )}
               <div className="form-control mt-6">
                 <button className="btn btn-primary">SignUp</button>
               </div>
