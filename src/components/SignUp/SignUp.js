@@ -1,7 +1,28 @@
-import React from "react";
+import React, { useContext } from "react";
 import { Link } from "react-router-dom";
+import { FaGoogle } from "react-icons/fa";
+import "./signUp.css";
+import { AuthContext } from "../../Context/UserContext";
 
 const SignUp = () => {
+  const { createUser } = useContext(AuthContext);
+
+  const handleSignUp = (e) => {
+    e.preventDefault();
+
+    const form = e.target;
+    const email = form.email.value;
+    const password = form.password.value;
+    const confirm = form.confirm.value;
+    console.log(email, password, confirm);
+
+    createUser(email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+      })
+      .catch((error) => console.log(error));
+  };
   return (
     <div>
       <div className="hero min-h-screen bg-base-200">
@@ -10,7 +31,7 @@ const SignUp = () => {
             <h1 className="text-6xl font-bold my-6">Please SignUp now!</h1>
           </div>
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
-            <form className="card-body">
+            <form onSubmit={handleSignUp} className="card-body">
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
@@ -48,7 +69,7 @@ const SignUp = () => {
               </div>
 
               <h1>
-                Already have an account?{" "}
+                Already have an account?
                 <Link style={{ color: "green" }} to="/login">
                   Please login
                 </Link>
@@ -59,7 +80,8 @@ const SignUp = () => {
               </div>
             </form>
 
-            <button className="googleBtn">
+            <button className="googleBtn btn btn-primary">
+              <FaGoogle></FaGoogle>
               <p className="ml-5">SignIn With Google</p>
             </button>
           </div>
