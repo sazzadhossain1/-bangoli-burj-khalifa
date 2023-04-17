@@ -39,7 +39,7 @@ const NavBar = () => {
               </li>
             </ul>
           </div>
-          <Link className="btn btn-ghost normal-case text-2xl">
+          <Link to="/home" className="btn btn-ghost normal-case text-2xl">
             BANGOLI BURJ KHALIFA
           </Link>
         </div>
