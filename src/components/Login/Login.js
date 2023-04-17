@@ -1,8 +1,12 @@
-import React from "react";
+import React, { useContext, useState } from "react";
 import { FaGoogle } from "react-icons/fa";
 import { Link } from "react-router-dom";
+import { AuthContext } from "../../Context/UserContext";
 
 const Login = () => {
+  const { loginUser } = useContext(AuthContext);
+  const [success, setSuccess] = useState(false);
+  const [error, setError] = useState("");
   const handleLogin = (e) => {
     e.preventDefault();
 
@@ -11,6 +15,20 @@ const Login = () => {
     const password = form.password.value;
 
     console.log(email, password);
+
+    loginUser(email, password)
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        setSuccess(true);
+        setError("");
+        form.reset();
+      })
+      .catch((error) => {
+        setError(error.message);
+        form.reset();
+        setSuccess(false);
+      });
   };
   return (
     <div>
@@ -54,6 +72,12 @@ const Login = () => {
                   Please SignUp
                 </Link>
               </h1>
+              {success && (
+                <p className="successAndError" style={{ color: "green" }}>
+                  User Login Successfully
+                </p>
+              )}
+              <p style={{ color: "red" }}>{error}</p>
               <div className="form-control mt-6">
                 <button className="btn btn-primary">Login</button>
               </div>

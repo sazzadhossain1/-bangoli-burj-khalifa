@@ -37,6 +37,7 @@ const SignUp = () => {
         form.reset();
       })
       .catch((error) => setError(error.message));
+    setSuccess(false);
     form.reset();
   };
   return (
@@ -90,9 +91,13 @@ const SignUp = () => {
                   Please login
                 </Link>
               </h1>
-              <p style={{ color: "red" }}>{error}</p>
+              <p style={{ color: "red" }} className="successAndError">
+                {error}
+              </p>
               {success && (
-                <p style={{ color: "green" }}>User Created Successfully</p>
+                <p style={{ color: "green" }} className="successAndError">
+                  User Created Successfully
+                </p>
               )}
               <div className="form-control mt-6">
                 <button className="btn btn-primary">SignUp</button>
