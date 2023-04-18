@@ -10,10 +10,14 @@ const Home = () => {
   return (
     <div>
       <Carousel></Carousel>
-      <div className="map-div my-11 container">
-        {getApi.map((data) => (
-          <HotelData data={data} key={data.id}></HotelData>
-        ))}
+      <div>
+        <h1 className="heading">Rooms & Suites</h1>
+        <div className="hr"></div>
+        <div className="map-div my-11 container">
+          {getApi.map((data) => (
+            <HotelData data={data} key={data.id}></HotelData>
+          ))}
+        </div>
       </div>
     </div>
   );

@@ -6,7 +6,7 @@
     "img": "https://hotel.bold-themes.com/summer/wp-content/uploads/sites/2/2016/02/summer-single-room-1.jpg",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi architecto voluptatibus facilis quo aliquid perspiciatis. Laudantium at dolores labore accusantium?",
     "persone": "1",
-    "price": "$115"
+    "price": "115"
   },
   {
     "id": 2,
@@ -15,7 +15,7 @@
     "img": "https://hotel.bold-themes.com/summer/wp-content/uploads/sites/2/2016/02/summer-single-room-2.jpg",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi architecto voluptatibus facilis quo aliquid perspiciatis. Laudantium at dolores labore accusantium?",
     "persone": "1",
-    "price": "$115"
+    "price": "115"
   },
   {
     "id": 3,
@@ -24,7 +24,7 @@
     "img": "https://hotel.bold-themes.com/summer/wp-content/uploads/sites/2/2016/02/summer-single-room-1.jpg",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi architecto voluptatibus facilis quo aliquid perspiciatis. Laudantium at dolores labore accusantium?",
     "persone": "1",
-    "price": "$115"
+    "price": "115"
   },
   {
     "id": 4,
@@ -33,7 +33,7 @@
     "img": "https://hotel.bold-themes.com/summer/wp-content/uploads/sites/2/2016/02/summer-single-room-1.jpg",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi architecto voluptatibus facilis quo aliquid perspiciatis. Laudantium at dolores labore accusantium?",
     "persone": "1",
-    "price": "$115"
+    "price": "115"
   },
   {
     "id": 5,
@@ -42,7 +42,7 @@
     "img": "https://hotel.bold-themes.com/summer/wp-content/uploads/sites/2/2016/02/summer-single-room-1.jpg",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi architecto voluptatibus facilis quo aliquid perspiciatis. Laudantium at dolores labore accusantium?",
     "persone": "1",
-    "price": "$115"
+    "price": "115"
   },
   {
     "id": 6,
@@ -51,6 +51,6 @@
     "img": "https://hotel.bold-themes.com/summer/wp-content/uploads/sites/2/2016/02/summer-single-room-1.jpg",
     "description": "Lorem ipsum dolor sit amet consectetur adipisicing elit. Commodi architecto voluptatibus facilis quo aliquid perspiciatis. Laudantium at dolores labore accusantium?",
     "persone": "1",
-    "price": "$115"
+    "price": "115"
   }
 ]

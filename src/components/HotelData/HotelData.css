@@ -1,5 +1,8 @@
 .hotel-products-div {
   margin-top: 50px;
+  border: 1px solid rgba(6, 69, 185, 0.486);
+  padding: 15px;
+  box-shadow: 2px 2px 20px rgba(207, 168, 238, 0.863);
 }
 .img {
   width: 100%;
@@ -23,6 +26,49 @@
   color: white;
   font-weight: 500;
 }
+.description {
+  color: snow;
+  font-size: 18px;
+}
+.booking-btn {
+  background-color: rgb(111, 0, 255);
+
+  padding: 10px;
+  border-radius: 20px;
+  font-size: 20px;
+  font-weight: 500;
+}
+
+.person-price-btn {
+  display: flex;
+  justify-content: space-evenly;
+  margin-top: 20px;
+  color: white;
+  align-items: center;
+}
+.heroIcon-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.person {
+  font-size: 20px;
+}
+.p {
+  color: rgb(111, 0, 255);
+  font-size: 40px;
+  font-weight: 500;
+}
+.price {
+  font-size: 20px;
+}
+.dollar {
+  color: rgb(111, 0, 255);
+  font-size: 40px;
+  font-weight: 500;
+}
+/* //////////////////////////////////////////// */
 @media screen and (max-width: 800px) {
   .hotel-products-div {
     margin: auto;
