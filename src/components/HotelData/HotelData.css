@@ -1,0 +1,37 @@
+.hotel-products-div {
+  margin-top: 50px;
+}
+.img {
+  width: 100%;
+}
+
+.iconAndName {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.icon-div {
+  margin: 20px;
+  font-size: 50px;
+  font-weight: 800;
+  color: rgb(111, 0, 255);
+}
+
+.name {
+  font-size: 20px;
+  color: white;
+  font-weight: 500;
+}
+@media screen and (max-width: 800px) {
+  .hotel-products-div {
+    margin: auto;
+    margin-top: 50px;
+  }
+}
+@media screen and (max-width: 1100px) {
+  .hotel-products-div {
+    margin: auto;
+    margin-top: 50px;
+  }
+}

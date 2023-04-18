@@ -11,8 +11,20 @@ function App() {
       path: "/",
       element: <Main></Main>,
       children: [
-        { path: "/", element: <Home></Home> },
-        { path: "/home", element: <Home></Home> },
+        {
+          path: "/",
+          loader: async () => {
+            return fetch("api.json");
+          },
+          element: <Home></Home>,
+        },
+        {
+          path: "/home",
+          loader: async () => {
+            return fetch("api.json");
+          },
+          element: <Home></Home>,
+        },
         { path: "/login", element: <Login></Login> },
         { path: "/signUp", element: <SignUp></SignUp> },
       ],

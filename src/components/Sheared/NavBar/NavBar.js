@@ -41,12 +41,20 @@ const NavBar = () => {
               <li>
                 <Link to="/home">Home</Link>
               </li>
-              <li tabIndex={0}>
-                <Link to="/login">Login</Link>
-              </li>
+
               <li>
                 <Link to="/signUp">SignUp</Link>
               </li>
+
+              {user?.uid ? (
+                <button onClick={handleLogOut} className="mr-5  text-2xl">
+                  LogOut
+                </button>
+              ) : (
+                <li tabIndex={0}>
+                  <Link to="/login">Login</Link>
+                </li>
+              )}
             </ul>
           </div>
           <Link to="/home" className="btn btn-ghost normal-case text-2xl">
