@@ -5,7 +5,7 @@ import "./signUp.css";
 import { AuthContext } from "../../Context/UserContext";
 
 const SignUp = () => {
-  const { createUser } = useContext(AuthContext);
+  const { createUser, signInWithGoogle } = useContext(AuthContext);
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
 
@@ -39,6 +39,19 @@ const SignUp = () => {
       .catch((error) => setError(error.message));
     setSuccess(false);
     form.reset();
+  };
+
+  const handleGoogleSignIn = () => {
+    signInWithGoogle()
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        setError("");
+        setSuccess(true);
+      })
+      .catch((error) => {
+        setError(error.message);
+      });
   };
   return (
     <div>
@@ -104,7 +117,10 @@ const SignUp = () => {
               </div>
             </form>
 
-            <button className="googleBtn btn btn-primary">
+            <button
+              onClick={handleGoogleSignIn}
+              className="googleBtn btn btn-primary"
+            >
               <FaGoogle></FaGoogle>
               <p className="ml-5">SignIn With Google</p>
             </button>

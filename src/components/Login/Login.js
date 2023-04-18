@@ -4,7 +4,7 @@ import { Link } from "react-router-dom";
 import { AuthContext } from "../../Context/UserContext";
 
 const Login = () => {
-  const { loginUser } = useContext(AuthContext);
+  const { loginUser, signInWithGoogle } = useContext(AuthContext);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
   const handleLogin = (e) => {
@@ -28,6 +28,19 @@ const Login = () => {
         setError(error.message);
         form.reset();
         setSuccess(false);
+      });
+  };
+
+  const handleGoogleSignIn = () => {
+    signInWithGoogle()
+      .then((result) => {
+        const user = result.user;
+        console.log(user);
+        setError("");
+        setSuccess(true);
+      })
+      .catch((error) => {
+        setError(error.message);
       });
   };
   return (
@@ -84,7 +97,10 @@ const Login = () => {
                 <button className="btn btn-primary">Login</button>
               </div>
             </form>
-            <button className="googleBtn btn btn-primary">
+            <button
+              onClick={handleGoogleSignIn}
+              className="googleBtn btn btn-primary"
+            >
               <FaGoogle></FaGoogle>
               <p className="ml-5">SignIn With Google</p>
             </button>

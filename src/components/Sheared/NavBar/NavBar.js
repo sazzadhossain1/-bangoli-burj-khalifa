@@ -14,7 +14,7 @@ const NavBar = () => {
       .catch((error) => console.log(error));
   };
   return (
-    <div className=" nav-div">
+    <div className=" nav-div bg-primary">
       <div className="navbar ">
         <div className="navbar-start">
           <div className="dropdown">
