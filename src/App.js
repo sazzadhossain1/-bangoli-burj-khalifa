@@ -4,6 +4,7 @@ import Main from "./LayOut/Main";
 import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
 import SignUp from "./components/SignUp/SignUp";
+import BookingNow from "./components/BookingNow/BookingNow";
 
 function App() {
   const router = createBrowserRouter([
@@ -27,6 +28,11 @@ function App() {
         },
         { path: "/login", element: <Login></Login> },
         { path: "/signUp", element: <SignUp></SignUp> },
+        {
+          path: "/bookingNow",
+
+          element: <BookingNow></BookingNow>,
+        },
       ],
     },
   ]);

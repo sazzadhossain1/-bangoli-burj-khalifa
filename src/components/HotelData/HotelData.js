@@ -1,9 +1,9 @@
 import React from "react";
 import "./HotelData.css";
 import { FaPeopleArrows } from "react-icons/fa";
+import { Link } from "react-router-dom";
 const HotelData = ({ data }) => {
-  console.log(data);
-  const { img, name, description, icon, persone, price } = data;
+  const { img, name, description, icon, persone, price, id } = data;
   return (
     <div>
       <div className="hotel-products-div">
@@ -25,7 +25,9 @@ const HotelData = ({ data }) => {
           <p className="price">
             <span className="dollar">$</span> {price}
           </p>
-          <button className="booking-btn">Booking Now</button>
+          <Link to={`/bookingNow`}>
+            <button className="booking-btn">Booking Now</button>
+          </Link>
         </div>
       </div>
     </div>
