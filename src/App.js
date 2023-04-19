@@ -5,6 +5,7 @@ import Home from "./components/Home/Home";
 import Login from "./components/Login/Login";
 import SignUp from "./components/SignUp/SignUp";
 import BookingNow from "./components/BookingNow/BookingNow";
+import PrivateRoutes from "./Routes/PrivateRoutes";
 
 function App() {
   const router = createBrowserRouter([
@@ -31,7 +32,11 @@ function App() {
         {
           path: "/bookingNow",
 
-          element: <BookingNow></BookingNow>,
+          element: (
+            <PrivateRoutes>
+              <BookingNow></BookingNow>
+            </PrivateRoutes>
+          ),
         },
       ],
     },

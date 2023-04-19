@@ -1,9 +1,10 @@
-import React from "react";
 import "./HotelData.css";
 import { FaPeopleArrows } from "react-icons/fa";
 import { Link } from "react-router-dom";
+
 const HotelData = ({ data }) => {
-  const { img, name, description, icon, persone, price, id } = data;
+  const { img, name, description, icon, persone, price } = data;
+
   return (
     <div>
       <div className="hotel-products-div">
