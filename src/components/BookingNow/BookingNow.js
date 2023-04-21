@@ -2,10 +2,11 @@ import { useLoaderData } from "react-router-dom";
 
 const BookingNow = () => {
   const productData = useLoaderData();
-  console.log(productData[0].name);
+  console.log(productData[0].img);
   return (
     <div>
-      <h1>This is bookingsssssssss</h1>
+      <h2>Name: {productData[0].name}</h2>
+      <img style={{ height: "600px" }} src={productData[0].img} alt="" />
     </div>
   );
 };
