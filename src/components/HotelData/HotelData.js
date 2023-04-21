@@ -3,7 +3,7 @@ import { FaPeopleArrows } from "react-icons/fa";
 import { Link } from "react-router-dom";
 
 const HotelData = ({ data }) => {
-  const { img, name, description, icon, persone, price } = data;
+  const { img, name, description, icon, persone, price, id } = data;
 
   return (
     <div>
@@ -26,7 +26,7 @@ const HotelData = ({ data }) => {
           <p className="price">
             <span className="dollar">$</span> {price}
           </p>
-          <Link to={`/bookingNow`}>
+          <Link to={`/bookingNow/${id}`}>
             <button className="booking-btn">Booking Now</button>
           </Link>
         </div>

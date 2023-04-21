@@ -6,7 +6,7 @@ import "./Home.css";
 
 const Home = () => {
   const getApi = useLoaderData();
-
+  // console.log(getApi);
   return (
     <div>
       <Carousel></Carousel>

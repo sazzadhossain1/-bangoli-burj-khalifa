@@ -16,22 +16,25 @@ function App() {
         {
           path: "/",
           loader: async () => {
-            return fetch("api.json");
+            return fetch("http://localhost:5000/burj-kholifa/");
           },
           element: <Home></Home>,
         },
         {
           path: "/home",
           loader: async () => {
-            return fetch("api.json");
+            return fetch("http://localhost:5000/burj-kholifa/");
           },
           element: <Home></Home>,
         },
         { path: "/login", element: <Login></Login> },
         { path: "/signUp", element: <SignUp></SignUp> },
-        {
-          path: "/bookingNow",
 
+        {
+          path: "/bookingNow/:bookingNowId",
+          loader: async ({ params }) => {
+            return fetch(`http://localhost:5000/${params.bookingNowId}/`);
+          },
           element: (
             <PrivateRoutes>
               <BookingNow></BookingNow>
