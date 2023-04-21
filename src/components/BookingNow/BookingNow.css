@@ -29,7 +29,7 @@
 }
 .blank-div {
   background-color: rgb(111, 0, 255);
-  width: 100px;
+  width: 120px;
   height: 4px;
 }
 .person-price-div {
@@ -40,10 +40,28 @@
   margin-top: 20px;
   line-height: 35px;
 }
+
+.choose-another-room {
+  background-color: rgb(91, 34, 248);
+  padding: 20px;
+  font-size: 30px;
+  font-weight: 700;
+  color: black;
+  border-radius: 20px;
+  margin-top: 10px;
+}
+
+.choose-another-room:hover {
+  background-color: rgba(20, 12, 41, 0.952);
+  color: rgb(255, 255, 255);
+}
 @media screen and (max-width: 1100px) {
   .booking-div img {
     margin: auto;
     width: 100%;
+  }
+  .person-price-div {
+    margin: 0%;
   }
 }
 @media screen and (max-width: 800px) {

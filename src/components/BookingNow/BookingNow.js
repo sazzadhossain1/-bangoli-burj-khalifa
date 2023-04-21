@@ -1,4 +1,4 @@
-import { useLoaderData } from "react-router-dom";
+import { Link, useLoaderData } from "react-router-dom";
 import "./BookingNow.css";
 
 const BookingNow = () => {
@@ -26,6 +26,10 @@ const BookingNow = () => {
           <p>{productData[0].description}</p>
           <p>Person: {productData[0].persone}</p>
           <p>Price: ${productData[0].price}</p>
+
+          <Link to="/">
+            <button className="choose-another-room">Choose Another Room</button>
+          </Link>
         </div>
       </div>
     </div>
