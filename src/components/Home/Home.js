@@ -3,6 +3,7 @@ import Carousel from "../Carousel/Carousel";
 import { useLoaderData } from "react-router-dom";
 import HotelData from "../HotelData/HotelData";
 import "./Home.css";
+import CarouselData from "../CarouselData/CarouselData";
 
 const Home = () => {
   const getApi = useLoaderData();
@@ -18,6 +19,7 @@ const Home = () => {
             <HotelData data={data} key={data.id}></HotelData>
           ))}
         </div>
+        <CarouselData></CarouselData>
       </div>
     </div>
   );
