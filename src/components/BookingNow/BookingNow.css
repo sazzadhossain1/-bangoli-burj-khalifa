@@ -1,0 +1,53 @@
+.booking-div img {
+  margin: auto;
+  width: 75%;
+}
+.parent-flex {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.executive-blank-div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.executive-text {
+  font-size: 30px;
+  margin: 10px;
+  color: white;
+}
+.product-name {
+  font-size: 45px;
+  color: white;
+}
+.text-description {
+  font-size: 20px;
+  width: 50%;
+  margin-left: 150px;
+  color: white;
+}
+.blank-div {
+  background-color: rgb(111, 0, 255);
+  width: 100px;
+  height: 4px;
+}
+.person-price-div {
+  color: white;
+  width: 50%;
+  margin: auto;
+  font-size: 20px;
+  margin-top: 20px;
+  line-height: 35px;
+}
+@media screen and (max-width: 1100px) {
+  .booking-div img {
+    margin: auto;
+    width: 100%;
+  }
+}
+@media screen and (max-width: 800px) {
+  .person-price-div {
+    margin: 0%;
+  }
+}

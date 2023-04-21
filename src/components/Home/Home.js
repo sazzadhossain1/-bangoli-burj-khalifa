@@ -19,8 +19,8 @@ const Home = () => {
             <HotelData data={data} key={data.id}></HotelData>
           ))}
         </div>
-        <CarouselData></CarouselData>
       </div>
+      <CarouselData className=""></CarouselData>
     </div>
   );
 };

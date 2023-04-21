@@ -2,6 +2,7 @@ import React from "react";
 import Slider from "react-slick";
 import "slick-carousel/slick/slick.css";
 import "slick-carousel/slick/slick-theme.css";
+import "./CarouselData.css";
 
 const CarouselData = () => {
   const settings = {
@@ -15,7 +16,7 @@ const CarouselData = () => {
   };
 
   return (
-    <div className="App">
+    <div className="container mx-auto carousel-parent-div">
       <Slider {...settings}>
         <div>
           <h3>Slide 1</h3>
