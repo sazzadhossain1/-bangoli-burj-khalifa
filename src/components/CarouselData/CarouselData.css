@@ -1,3 +1,32 @@
 .carousel-parent-div {
   width: 100%;
 }
+.branches {
+  font-size: 50px;
+  margin: 20px;
+  font-weight: 500;
+}
+.carousel-img {
+  height: 250px;
+  width: 100%;
+}
+
+.country {
+  font-size: 30px;
+  color: white;
+  text-align: center;
+}
+.carousel-div {
+  border: 1px solid white;
+  background-color: rgb(119, 52, 243);
+  padding: 10px;
+}
+.carousel-div p {
+  color: white;
+  font-size: 18px;
+  font-weight: 500;
+}
+.slick-slide {
+  margin-right: 15px;
+}
+/* ///// */

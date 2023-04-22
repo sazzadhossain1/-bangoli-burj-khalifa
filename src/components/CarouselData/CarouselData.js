@@ -16,35 +16,113 @@ const CarouselData = () => {
   };
 
   return (
-    <div className="container mx-auto carousel-parent-div">
-      <Slider {...settings}>
-        <div>
-          <h3>Slide 1</h3>
+    <div className="container  mx-auto carousel-parent-div">
+      <h1 className="branches text-center text-white ">Our Branches</h1>
+
+      <Slider className="" {...settings}>
+        <div className="carousel-div mr-10">
+          <h3 className="country">Bangladesh Branch</h3>
           <img
-            src="https://hotel.bold-themes.com/summer/wp-content/uploads/sites/2/2016/02/summer-single-room-1.jpg"
+            className="carousel-img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0DFgVOq-DR90A86lDxhIT4byDMNHpZMSPjw&usqp=CAU"
             alt=""
           />
+          <p>
+            Location: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Sit aut modi facilis voluptates? Quaerat, dolor sapiente soluta
+            suscipit nobis repellat.
+          </p>
         </div>
-        <div>
-          <h3>Slide 2</h3>
+        <div className="carousel-div">
+          <h3 className="country">India Branch</h3>
+          <img
+            className="carousel-img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUPm3a4rg63_Cq4Q6kp5YmJlkqydOfAwUHlRFPLasevLCMpARRs1Y6bXl0T-KSzYhZt34&usqp=CAU"
+            alt=""
+          />
+          <p>
+            Location: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Sit aut modi facilis voluptates? Quaerat, dolor sapiente soluta
+            suscipit nobis repellat.
+          </p>
         </div>
-        <div>
-          <h3>Slide 3</h3>
+        <div className="carousel-div">
+          <h3 className="country">Nepal Branch</h3>
+          <img
+            className="carousel-img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0DFgVOq-DR90A86lDxhIT4byDMNHpZMSPjw&usqp=CAU"
+            alt=""
+          />
+          <p>
+            Location: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Sit aut modi facilis voluptates? Quaerat, dolor sapiente soluta
+            suscipit nobis repellat.
+          </p>
         </div>
-        <div>
-          <h3>Slide 4</h3>
+        <div className="carousel-div">
+          <h3 className="country">Singapoor Branch</h3>
+          <img
+            className="carousel-img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcR-ItqWGurZN5q6LW19Ee6OuKTMEjRD7GJyRA&usqp=CAU"
+            alt=""
+          />
+          <p>
+            Location: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Sit aut modi facilis voluptates? Quaerat, dolor sapiente soluta
+            suscipit nobis repellat.
+          </p>
         </div>
-        <div>
-          <h3>Slide 5</h3>
+        <div className="carousel-div">
+          <h3 className="country">Malaysia Branch</h3>
+          <img
+            className="carousel-img"
+            src=" https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRUPm3a4rg63_Cq4Q6kp5YmJlkqydOfAwUHlRFPLasevLCMpARRs1Y6bXl0T-KSzYhZt34&usqp=CAU"
+            alt=""
+          />
+          <p>
+            Location: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Sit aut modi facilis voluptates? Quaerat, dolor sapiente soluta
+            suscipit nobis repellat.
+          </p>
         </div>
-        <div>
-          <h3>Slide 6</h3>
+        <div className="carousel-div">
+          <h3 className="country">USA Branch</h3>
+          <img
+            className="carousel-img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs1GLXZ4g_zut-gMFe9EGYb0Mk0Gb3qeytag6FFwgWByZO9b9SjOjLwiP04dWczQeEhOI&usqp=CAU"
+            alt=""
+          />
+          <p>
+            Location: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Sit aut modi facilis voluptates? Quaerat, dolor sapiente soluta
+            suscipit nobis repellat.
+          </p>
         </div>
-        <div>
-          <h3>Slide 7</h3>
+        <div className="carousel-div">
+          <h3 className="country">Dubai Branch</h3>
+          <img
+            className="carousel-img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQ0DFgVOq-DR90A86lDxhIT4byDMNHpZMSPjw&usqp=CAU"
+            alt=""
+          />
+          <p>
+            Location: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Sit aut modi facilis voluptates? Quaerat, dolor sapiente soluta
+            suscipit nobis repellat.
+          </p>
         </div>
-        <div>
-          <h3>Slide 8</h3>
+        <div className="carousel-div">
+          <h3 className="country">Pakisthan Branch</h3>
+          <img
+            className="carousel-img"
+            src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcRs1GLXZ4g_zut-gMFe9EGYb0Mk0Gb3qeytag6FFwgWByZO9b9SjOjLwiP04dWczQeEhOI&usqp=CAU"
+            alt=""
+          />
+          <p>
+            Location: Lorem ipsum dolor sit amet consectetur, adipisicing elit.
+            Sit aut modi facilis voluptates? Quaerat, dolor sapiente soluta
+            suscipit nobis repellat.
+          </p>
         </div>
       </Slider>
     </div>
