@@ -169,6 +169,23 @@ const CarouselData = () => {
               </a>
             </button>
           </SwiperSlide>
+          <SwiperSlide className="img-swiper">
+            <h1>Nepal</h1>
+            <img
+              src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
+              alt=""
+            />
+            <p>
+              Lorem, ipsum dolor sit amet consectetur adipisicing elit. Quidem
+              accusamus, officia in voluptate excepturi mollitia eius nobis.
+              Eum, ratione in.
+            </p>
+            <button className="site-btn">
+              <a href="https://unsplash.com/s/photos/hotel" target="blank">
+                View Website
+              </a>
+            </button>
+          </SwiperSlide>
         </div>
       </Swiper>
     </div>
