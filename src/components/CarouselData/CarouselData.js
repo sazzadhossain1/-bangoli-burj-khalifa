@@ -33,6 +33,7 @@ const CarouselData = () => {
       >
         <div className="">
           <SwiperSlide className="img-swiper">
+            <h1>Bangladesh</h1>
             <img
               src="https://images.unsplash.com/photo-1564501049412-61c2a3083791?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MTJ8fGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
               alt=""
@@ -42,8 +43,15 @@ const CarouselData = () => {
               Accusantium, dolor. Qui illo, obcaecati sunt ab incidunt quasi
               molestias error ex.
             </p>
+
+            <button className="site-btn">
+              <a href="https://unsplash.com/s/photos/hotel" target="blank">
+                View Website
+              </a>
+            </button>
           </SwiperSlide>
           <SwiperSlide className="img-swiper">
+            <h1>India</h1>
             <img
               src="https://images.unsplash.com/photo-1542314831-068cd1dbfeeb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NXx8aG90ZWx8ZW58MHx8MHx8&auto=format&fit=crop&w=500&q=60"
               alt=""
@@ -53,8 +61,14 @@ const CarouselData = () => {
               impedit magni praesentium quasi ipsa at quod perferendis autem
               debitis vitae.
             </p>
+            <button className="site-btn">
+              <a href="https://unsplash.com/s/photos/hotel" target="blank">
+                View Website
+              </a>
+            </button>
           </SwiperSlide>
           <SwiperSlide className="img-swiper">
+            <h1>Pakistan</h1>
             <img
               src="https://images.unsplash.com/photo-1568084680786-a84f91d1153c?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MjN8fGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
               alt=""
@@ -64,8 +78,14 @@ const CarouselData = () => {
               nulla architecto sunt ipsum mollitia impedit ipsa libero odio
               perspiciatis nam.
             </p>
+            <button className="site-btn">
+              <a href="https://unsplash.com/s/photos/hotel" target="blank">
+                View Website
+              </a>
+            </button>
           </SwiperSlide>
           <SwiperSlide className="img-swiper">
+            <h1>Nepal</h1>
             <img
               src="https://images.unsplash.com/photo-1551882547-ff40c63fe5fa?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8MzZ8fGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
               alt=""
@@ -75,8 +95,14 @@ const CarouselData = () => {
               accusamus, officia in voluptate excepturi mollitia eius nobis.
               Eum, ratione in.
             </p>
+            <button className="site-btn">
+              <a href="https://unsplash.com/s/photos/hotel" target="blank">
+                View Website
+              </a>
+            </button>
           </SwiperSlide>
           <SwiperSlide className="img-swiper">
+            <h1>Malaysia</h1>
             <img
               src="https://images.unsplash.com/photo-1589923158776-cb4485d99fd6?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NTN8fGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
               alt=""
@@ -86,8 +112,14 @@ const CarouselData = () => {
               Consequuntur neque fuga reiciendis excepturi ab officia autem,
               amet deserunt quam! Iusto.
             </p>
+            <button className="site-btn">
+              <a href="https://unsplash.com/s/photos/hotel" target="blank">
+                View Website
+              </a>
+            </button>
           </SwiperSlide>
           <SwiperSlide className="img-swiper">
+            <h1>Singapore</h1>
             <img
               src="https://images.unsplash.com/photo-1535827841776-24afc1e255ac?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjN8fGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
               alt=""
@@ -97,8 +129,14 @@ const CarouselData = () => {
               Inventore perspiciatis ipsa quibusdam iusto natus id asperiores
               nesciunt cupiditate eius voluptates!
             </p>
+            <button className="site-btn">
+              <a href="https://unsplash.com/s/photos/hotel" target="blank">
+                View Website
+              </a>
+            </button>
           </SwiperSlide>
           <SwiperSlide className="img-swiper">
+            <h1>Malaysia</h1>
             <img
               src="https://images.unsplash.com/photo-1562133567-b6a0a9c7e6eb?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8NjR8fGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
               alt=""
@@ -108,8 +146,14 @@ const CarouselData = () => {
               laboriosam quam, incidunt dolorem similique repellat quae vitae
               delectus quis porro.
             </p>
+            <button className="site-btn">
+              <a href="https://unsplash.com/s/photos/hotel" target="blank">
+                View Website
+              </a>
+            </button>
           </SwiperSlide>
           <SwiperSlide className="img-swiper">
+            <h1>USA</h1>
             <img
               src="https://images.unsplash.com/photo-1571896349842-33c89424de2d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxzZWFyY2h8Njh8fGhvdGVsfGVufDB8fDB8fA%3D%3D&auto=format&fit=crop&w=500&q=60"
               alt=""
@@ -119,6 +163,11 @@ const CarouselData = () => {
               Voluptatibus, quas sunt! Pariatur magnam voluptatem unde eius ea
               possimus atque vel.
             </p>
+            <button className="site-btn">
+              <a href="https://unsplash.com/s/photos/hotel" target="blank">
+                View Website
+              </a>
+            </button>
           </SwiperSlide>
         </div>
       </Swiper>
