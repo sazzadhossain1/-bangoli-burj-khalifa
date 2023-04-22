@@ -36,6 +36,7 @@
   padding-top: 50px;
   padding-bottom: 50px;
   margin: auto;
+  padding: 70px;
 }
 
 .swiper-slide {
@@ -49,4 +50,14 @@
   display: block;
   width: 100%;
   height: 300px;
+}
+
+/*  */
+
+.branches-header {
+  font-size: 60px;
+  color: white;
+  text-align: center;
+  margin-top: 40px;
+  font-weight: 500;
 }
