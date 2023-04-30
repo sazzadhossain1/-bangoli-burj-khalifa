@@ -68,21 +68,24 @@ const NavBar = () => {
                 Home
               </Link>
             </li>
-            <li>
-              <Link className="mr-5  text-2xl" to="/signUp">
-                SignUp
-              </Link>
-            </li>
+
             {user?.uid ? (
               <button onClick={handleLogOut} className="mr-5  text-2xl">
                 LogOut
               </button>
             ) : (
-              <li tabIndex={0}>
-                <Link className="mr-5 text-2xl" to="/login">
-                  Login
-                </Link>
-              </li>
+              <>
+                <li>
+                  <Link className="mr-5  text-2xl" to="/signUp">
+                    SignUp
+                  </Link>
+                </li>
+                <li tabIndex={0}>
+                  <Link className="mr-5 text-2xl" to="/login">
+                    Login
+                  </Link>
+                </li>
+              </>
             )}
           </ul>
           <h1>{user?.displayName}</h1>

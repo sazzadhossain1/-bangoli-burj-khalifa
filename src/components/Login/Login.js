@@ -2,9 +2,10 @@ import React, { useContext, useState } from "react";
 import { FaGoogle } from "react-icons/fa";
 import { Link, useLocation, useNavigate } from "react-router-dom";
 import { AuthContext } from "../../Context/UserContext";
+import { toast } from "react-hot-toast";
 
 const Login = () => {
-  const { loginUser, signInWithGoogle } = useContext(AuthContext);
+  const { loginUser, signInWithGoogle, setLoading } = useContext(AuthContext);
   const [success, setSuccess] = useState(false);
   const [error, setError] = useState("");
 
@@ -28,12 +29,19 @@ const Login = () => {
         setSuccess(true);
         setError("");
         form.reset();
-        navigate(from, { replace: true });
+        if (user.emailVerified) {
+          navigate(from, { replace: true });
+        } else {
+          toast.error("Your Email is not Verified.Please Verify your Email");
+        }
       })
       .catch((error) => {
         setError(error.message);
         form.reset();
         setSuccess(false);
+      })
+      .finally(() => {
+        setLoading(false);
       });
   };
 
@@ -44,6 +52,7 @@ const Login = () => {
         console.log(user);
         setError("");
         setSuccess(true);
+
         navigate(from, { replace: true });
       })
       .catch((error) => {

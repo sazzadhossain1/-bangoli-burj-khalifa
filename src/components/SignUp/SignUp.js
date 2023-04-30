@@ -3,9 +3,10 @@ import { Link } from "react-router-dom";
 import { FaGoogle } from "react-icons/fa";
 import "./signUp.css";
 import { AuthContext } from "../../Context/UserContext";
+import { toast } from "react-hot-toast";
 
 const SignUp = () => {
-  const { createUser, signInWithGoogle, updateUserProfile } =
+  const { createUser, signInWithGoogle, updateUserProfile, verifyEmail } =
     useContext(AuthContext);
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
@@ -38,6 +39,8 @@ const SignUp = () => {
         setSuccess(true);
         form.reset();
         handleUpdateUserProfile(name);
+        handleEmailVerification();
+        toast.success("Successfully toasted!");
       })
       .catch((error) => setError(error.message));
     setSuccess(false);
@@ -57,12 +60,21 @@ const SignUp = () => {
       });
   };
 
-  // get user name function //
+  // get user name function, update user display  name in the ui nav bar //
+
+  const handleEmailVerification = () => {
+    verifyEmail()
+      .then(() => {
+        console.log("email send");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
   const handleUpdateUserProfile = (name) => {
     const profile = {
       displayName: name,
     };
-
     updateUserProfile(profile)
       .then(() => {
         console.log("get the user name");
@@ -71,6 +83,9 @@ const SignUp = () => {
         console.log(error);
       });
   };
+
+  // send email verification function //
+
   return (
     <div>
       <div className="hero min-h-screen bg-base-200">
