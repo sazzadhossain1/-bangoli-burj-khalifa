@@ -5,7 +5,8 @@ import "./signUp.css";
 import { AuthContext } from "../../Context/UserContext";
 
 const SignUp = () => {
-  const { createUser, signInWithGoogle } = useContext(AuthContext);
+  const { createUser, signInWithGoogle, updateUserProfile } =
+    useContext(AuthContext);
   const [error, setError] = useState("");
   const [success, setSuccess] = useState(false);
 
@@ -14,9 +15,10 @@ const SignUp = () => {
 
     const form = e.target;
     const email = form.email.value;
+    const name = form.name.value;
     const password = form.password.value;
     const confirm = form.confirm.value;
-    console.log(email, password, confirm);
+    // console.log(email, name, password, confirm);
 
     if (password.length < 8) {
       setError("Please Password length at least 8 characters");
@@ -35,6 +37,7 @@ const SignUp = () => {
         setError("");
         setSuccess(true);
         form.reset();
+        handleUpdateUserProfile(name);
       })
       .catch((error) => setError(error.message));
     setSuccess(false);
@@ -53,6 +56,21 @@ const SignUp = () => {
         setError(error.message);
       });
   };
+
+  // get user name function //
+  const handleUpdateUserProfile = (name) => {
+    const profile = {
+      displayName: name,
+    };
+
+    updateUserProfile(profile)
+      .then(() => {
+        console.log("get the user name");
+      })
+      .catch((error) => {
+        console.log(error);
+      });
+  };
   return (
     <div>
       <div className="hero min-h-screen bg-base-200">
@@ -62,6 +80,18 @@ const SignUp = () => {
           </div>
           <div className="card flex-shrink-0 w-full max-w-sm shadow-2xl bg-base-100">
             <form onSubmit={handleSignUp} className="card-body">
+              <div className="form-control">
+                <label className="label">
+                  <span className="label-text">Name</span>
+                </label>
+                <input
+                  type="text"
+                  name="name"
+                  placeholder="Your Name"
+                  className="input input-bordered"
+                  required
+                />
+              </div>
               <div className="form-control">
                 <label className="label">
                   <span className="label-text">Email</span>
