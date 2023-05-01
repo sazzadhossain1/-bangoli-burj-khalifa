@@ -1,4 +1,4 @@
-.footer-parent-container {
+/* .footer-parent-container {
   background: rgba(0, 0, 0, 0.9)
     url(https://snow-club.themerex.net/wp-content/uploads/2017/02/bg_hotspots.jpg);
   height: 100vh;
@@ -7,7 +7,7 @@
   background-size: cover;
   background-attachment: fixed;
   background-blend-mode: darken;
-}
+} */
 
 .footer-grid-div {
   display: grid;

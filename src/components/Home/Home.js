@@ -4,12 +4,13 @@ import { useLoaderData } from "react-router-dom";
 import HotelData from "../HotelData/HotelData";
 import "./Home.css";
 import CarouselData from "../CarouselData/CarouselData";
+import OffersAndDeals from "../OffersAndDeals/OffersAndDeals";
 
 const Home = () => {
   const getApi = useLoaderData();
   // console.log(getApi);
   return (
-    <div>
+    <div className="home-parent-div">
       <Carousel></Carousel>
       <div>
         <h1 className="heading">Rooms & Suites</h1>
@@ -21,6 +22,7 @@ const Home = () => {
         </div>
       </div>
       <CarouselData className=""></CarouselData>
+      <OffersAndDeals></OffersAndDeals>
     </div>
   );
 };
