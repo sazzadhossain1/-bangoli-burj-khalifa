@@ -7,6 +7,8 @@ import SignUp from "./components/SignUp/SignUp";
 import BookingNow from "./components/BookingNow/BookingNow";
 import PrivateRoutes from "./Routes/PrivateRoutes";
 import { Toaster } from "react-hot-toast";
+import CarouselData from "./components/CarouselData/CarouselData";
+import OffersAndDeals from "./components/OffersAndDeals/OffersAndDeals";
 
 function App() {
   const router = createBrowserRouter([
@@ -27,6 +29,14 @@ function App() {
             return fetch("http://localhost:5000/burj-kholifa/");
           },
           element: <Home></Home>,
+        },
+        {
+          path: "/branches",
+          element: <CarouselData></CarouselData>,
+        },
+        {
+          path: "/offers",
+          element: <OffersAndDeals></OffersAndDeals>,
         },
         { path: "/login", element: <Login></Login> },
         { path: "/signUp", element: <SignUp></SignUp> },

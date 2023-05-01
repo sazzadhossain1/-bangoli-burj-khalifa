@@ -68,6 +68,16 @@ const NavBar = () => {
                 Home
               </Link>
             </li>
+            <li>
+              <Link className="mr-5 text-2xl" to="/branches">
+                Our Branches
+              </Link>
+            </li>
+            <li>
+              <Link className="mr-5 text-2xl" to="/offers">
+                Offers
+              </Link>
+            </li>
 
             {user?.uid ? (
               <button onClick={handleLogOut} className="mr-5  text-2xl">
