@@ -17,6 +17,19 @@ const OffersAndDeals = () => {
             <div className="empty-div"></div>
           </div>
           <p className="heading-p">Family vacation</p>
+          <p className="details-lorem-div">
+            Lorem ipsum dolor, sit amet consectetur adipisicing elit. A vitae,
+            repellendus temporibus aliquam omnis, blanditiis voluptate soluta
+            expedita enim aut qui porro voluptates eum sequi obcaecati quod
+            deleniti eligendi nam necessitatibus? Eveniet itaque, vitae sed
+            incidunt quam quibusdam odio ad ut impedit porro quia, corporis
+            eius, mollitia consequuntur at magnam? Facere quas nobis iure
+            tenetur impedit pariatur fuga ex natus?
+          </p>
+          <div className="btn-flex-div">
+            <button className="btn-button">Details</button>
+            <p className="price-night">$80 / night</p>
+          </div>
         </div>
         <div className="second-child">
           <img
@@ -29,6 +42,19 @@ const OffersAndDeals = () => {
             <div className="empty-div"></div>
           </div>
           <p className="heading-p">Newlyweds weekend</p>
+          <p className="details-lorem-div">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Nihil
+            similique veniam blanditiis laboriosam perferendis. Id, sint
+            nesciunt error quasi earum eaque qui neque nihil at sunt a
+            reprehenderit aliquam corrupti laboriosam doloremque ad quod eveniet
+            distinctio totam itaque repellendus aspernatur recusandae
+            consequatur. Iste officiis similique ea ab enim accusamus ad officia
+            temporibus porro aspernatur earum corrupti a dolorem,
+          </p>
+          <div className="btn-flex-div">
+            <button className="btn-button">Details</button>
+            <p className="price-night">$100 / night</p>
+          </div>
         </div>
         <div className="third-child">
           <img
@@ -42,6 +68,19 @@ const OffersAndDeals = () => {
             <div className="empty-div"></div>
           </div>
           <p className="heading-p">Lazy weekend</p>
+          <p className="details-lorem-div">
+            Lorem ipsum dolor sit amet consectetur adipisicing elit. Error quos
+            sapiente optio? Sint ea aut doloremque veniam molestiae esse
+            possimus quod odio molestias aliquid voluptas quibusdam, enim ex
+            consectetur natus porro quasi optio perspiciatis totam ut dicta
+            unde! Accusamus suscipit, asperiores dicta ipsa ullam eos
+            consequuntur obcaecati itaque nisi nulla quisquam doloribus nam
+            tempora eligendi deserunt dolore excepturi error voluptatum?
+          </p>
+          <div className="btn-flex-div">
+            <button className="btn-button">Details</button>
+            <p className="price-night">$40 / night</p>
+          </div>
         </div>
       </div>
     </div>
