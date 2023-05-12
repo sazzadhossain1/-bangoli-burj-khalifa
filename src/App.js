@@ -19,14 +19,14 @@ function App() {
         {
           path: "/",
           loader: async () => {
-            return fetch("http://localhost:5000/burj-kholifa/");
+            return fetch("http://localhost:5000/allApis/");
           },
           element: <Home></Home>,
         },
         {
           path: "/home",
           loader: async () => {
-            return fetch("http://localhost:5000/burj-kholifa/");
+            return fetch("http://localhost:5000/allApis/");
           },
           element: <Home></Home>,
         },
@@ -44,7 +44,10 @@ function App() {
         {
           path: "/bookingNow/:bookingNowId",
           loader: async ({ params }) => {
-            return fetch(`http://localhost:5000/${params.bookingNowId}/`);
+            // return fetch(`http://localhost:5000/${params.bookingNowId}`);
+            return fetch(
+              `http://localhost:5000/allApis/${params.bookingNowId}`
+            );
           },
           element: (
             <PrivateRoutes>

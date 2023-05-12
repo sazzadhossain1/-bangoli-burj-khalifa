@@ -13,7 +13,7 @@ const BookingNow = () => {
               <h1 className="executive-text">Executive</h1>
               <div className="blank-div"></div>
             </div>
-            <h2 className="product-name"> {productData[0].name}</h2>
+            <h2 className="product-name"> {productData.name}</h2>
           </div>
           <h4 className="text-description">
             At the heart of San Diego, on one of the most colorful beaches,
@@ -21,11 +21,11 @@ const BookingNow = () => {
             famous for it’s easy going staff and vacation you’ll never forget…
           </h4>
         </div>
-        <img style={{ height: "600px" }} src={productData[0].img} alt="" />
+        <img style={{ height: "600px" }} src={productData.img} alt="" />
         <div className="person-price-div">
-          <p>{productData[0].description}</p>
-          <p>Person: {productData[0].persone}</p>
-          <p>Price: ${productData[0].price}</p>
+          <p>{productData.description}</p>
+          <p>Person: {productData.persone}</p>
+          <p>Price: ${productData.price}</p>
 
           <Link to="/">
             <button className="choose-another-room">Choose Another Room</button>
