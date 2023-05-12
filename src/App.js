@@ -19,14 +19,18 @@ function App() {
         {
           path: "/",
           loader: async () => {
-            return fetch("http://localhost:5000/allApis/");
+            return fetch(
+              "https://bangoli-bruse-kholifa-server.vercel.app/allApis/"
+            );
           },
           element: <Home></Home>,
         },
         {
           path: "/home",
           loader: async () => {
-            return fetch("http://localhost:5000/allApis/");
+            return fetch(
+              "https://bangoli-bruse-kholifa-server.vercel.app/allApis/"
+            );
           },
           element: <Home></Home>,
         },
