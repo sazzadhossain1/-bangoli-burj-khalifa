@@ -50,7 +50,7 @@ function App() {
           loader: async ({ params }) => {
             // return fetch(`http://localhost:5000/${params.bookingNowId}`);
             return fetch(
-              `http://localhost:5000/allApis/${params.bookingNowId}`
+              `https://bangoli-bruse-kholifa-server.vercel.app/allApis/${params.bookingNowId}`
             );
           },
           element: (
