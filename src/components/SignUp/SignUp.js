@@ -47,6 +47,7 @@ const SignUp = () => {
     form.reset();
   };
 
+  // signIn with Google //
   const handleGoogleSignIn = () => {
     signInWithGoogle()
       .then((result) => {
@@ -60,8 +61,7 @@ const SignUp = () => {
       });
   };
 
-  // get user name function, update user display  name in the ui nav bar //
-
+  // send email verification function //
   const handleEmailVerification = () => {
     verifyEmail()
       .then(() => {
@@ -71,6 +71,7 @@ const SignUp = () => {
         console.log(error);
       });
   };
+  // get user name function, update user display  name in the ui nav bar //
   const handleUpdateUserProfile = (name) => {
     const profile = {
       displayName: name,
@@ -83,8 +84,6 @@ const SignUp = () => {
         console.log(error);
       });
   };
-
-  // send email verification function //
 
   return (
     <div>
